@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot Combat Tournament Rules</title>
+    <style>
+        :root {
+            --primary: #ff4500;
+            --dark: #1a1a1a;
+            --light: #f4f4f4;
+            --gray: #2d2d2d;
+            --text-light: #ffffff;
+            --text-dark: #333333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light);
+            color: var(--text-dark);
+        }
+
+        header {
+            background-color: var(--dark);
+            color: var(--text-light);
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 5px solid var(--primary);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            color: #bbb;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .rule-section {
+            background: #fff;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border-left: 5px solid var(--primary);
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .rule-section h2 {
+            margin-top: 0;
+            color: var(--dark);
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .rule-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .rule-list li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .rule-list li::before {
+            content: "•";
+            color: var(--primary);
+            font-weight: bold;
+            font-size: 1.3rem;
+            position: absolute;
+            left: 0;
+            top: -2px;
+        }
+
+        .rule-list li strong {
+            color: var(--dark);
+        }
+
+        .warning-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffeeba;
+            color: #856404;
+            padding: 1rem;
+            border-radius: 4px;
+            margin-top: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--dark);
+            color: var(--text-light);
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Robot Combat Official Rules</h1>
+        <p>Standard Regulations & Safety Guidelines</p>
+    </header>
+
+    <main>
+        <!-- Weight Classes -->
+        <section class="rule-section">
+            <h2>⚙️ 1. Weight Classes & Inspection</h2>
+            <ul class="rule-list">
+                <li><strong>Strict Limits:</strong> All robots must strictly fit within their registered weight class limits (e.g., 150g Fairyweight, 1lb Antweight, 3lb Beetleweight).</li>
+                <li><strong>Safety Inspection:</strong> Every robot must pass a mandatory safety tech check before entering the arena.</li>
+                <li><strong>Activation Switch:</strong> Robots must feature an explicit, easily accessible power switch or removable link to deactivate the system safely.</li>
+            </ul>
+        </section>
+
+        <!-- Match Rules -->
+        <section class="rule-section">
+            <h2>⚔️ 2. Match & Combat Rules</h2>
+            <ul class="rule-list">
+                <li><strong>Match Duration:</strong> Standard matches last 3 minutes unless a knockout occurs.</li>
+                <li><strong>Tap-Outs:</strong> A builder may forfeit the match at any time by calling a verbal "Tap-Out".</li>
+                <li><strong>Mobility:</strong> Robots must demonstrate controlled translational movement. If a robot cannot move due to damage, a 10-second countdown will begin.</li>
+                <li><strong>Pinning & Lifting:</strong> Robots may pin or lift an opponent for a maximum of 10 seconds before they must release them.</li>
+            </ul>
+        </section>
+
+        <!-- Prohibited Weapons -->
+        <section class="rule-section">
+            <h2>🚫 3. Prohibited Weapons & Tactics</h2>
+            <ul class="rule-list">
+                <li><strong>Radio Interference:</strong> Any intentional jamming or interference with opponent control frequencies is strictly banned.</li>
+                <li><strong>Liquid & Gas:</strong> Liquid weapons, smoke generation, and unapproved pressurized gas systems are forbidden.</li>
+                <li><strong>Arena Damage:</strong> Weapons explicitly designed to deliberately destroy or chew into the arena floor or walls are prohibited.</li>
+                <li><strong>Untethered Projectiles:</strong> Projectiles must be securely tethered to the robot body unless explicitly permitted by specific event variants.</li>
+            </ul>
+            <div class="warning-box">
+                <strong>⚠️ Safety Violations:</strong> Failure to comply with weapon safety restrictions will result in immediate disqualification from the tournament.
+            </div>
+        </section>
+
+        <!-- Judging Criteria -->
+        <section class="rule-section">
+            <h2>⚖️ 4. Judging Criteria</h2>
+            <p>If a match goes to the full time limit, three judges will score the fight based on:</p>
+            <ul class="rule-list">
+                <li><strong>Damage:</strong> Points awarded for visible structural or functional harm inflicted on the opponent.</li>
+                <li><strong>Aggression:</strong> Points awarded for frequency and severity of intentional attacks.</li>
+                <li><strong>Control:</strong> Points awarded for dictating the pace and orientation of the fight.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Robot Combat Association. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

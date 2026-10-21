@@ -1,5 +1,5 @@
 body {
-  background: #2f2f63;
+  background: electric cyan;
   margin: 0;
   padding: 0;
 }
@@ -8,7 +8,7 @@ body {
 
 .navigation {
   box-sizing: border-box;
-  background-color: #00FFFF;
+  background-color: dark blue;
   overflow: auto;
   padding: 18px 50px;
   position: relative;
@@ -50,8 +50,8 @@ table {
 }
 
 thead th {
-  background: #88CCF1;
-  color: #FF1493;
+  background: Royal Pink;
+  color: black;
   font-family: 'Lato', sans-serif;
   font-weight: 100;
   letter-spacing: 2px;

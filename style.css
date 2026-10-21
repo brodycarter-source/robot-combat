@@ -1,5 +1,5 @@
 body {
-  background: dark blue;
+  background:  electric cyan;
   margin: 0;
   padding: 0;
 }
@@ -7,7 +7,7 @@ body {
 /* Navigation */
 
 .navigation {
-  box-sizing: border-box;
+  box-sizing: border-box dark blue;
   background-color: electric cyan;
   overflow: auto;
   padding: 18px 50px;

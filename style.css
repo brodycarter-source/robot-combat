@@ -1,5 +1,5 @@
 body {
-  background: #2f2f63F;
+  background: #2f2f63;
   margin: 0;
   padding: 0;
 }
@@ -8,7 +8,7 @@ body {
 
 .navigation {
   box-sizing: border-box;
-  background-color: #00FFF;
+  background-color: #00FFFF;
   overflow: auto;
   padding: 18px 50px;
   position: relative;

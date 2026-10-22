@@ -1,17 +1,23 @@
+
+/* Import sharp, futuristic Google Fonts */
+@import url('https://googleapis.com');
+
 body {
-  background:  electric cyan;
+  background: #0d1117; /* Deep matte robotic chassis grey */
+  color: #c9d1d9;
   margin: 0;
   padding: 0;
+  font-family: 'Rajdhani', sans-serif;
 }
 
 /* Navigation */
-
 .navigation {
-  box-sizing: border-box dark blue;
-  background-color: electric cyan;
-  overflow: auto;
-  padding: 18px 50px;
-  position: relative;
+  box-sizing: border-box;
+  background-color: #161b22; /* Darker panel background */
+  border-bottom: 2px solid #00f0ff; /* Electric cyan accent line */
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.2); /* Neon glow */
+  padding: 10px 50px;
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 999;
@@ -20,65 +26,93 @@ body {
 ul {
   padding: 0;
   margin: 0;
+  display: flex;
+  justify-content: flex-start;
 }
 
 li {
-  color: black;
-  display: inline-block;
-  font-family: 'Oxygen', sans-serif;
-  font-size: 16px;
-  font-weight: 300;
+  color: #8b949e;
+  list-style: none;
+  font-family: 'Orbitron', sans-serif; /* High-tech font for nav */
+  font-size: 14px;
   letter-spacing: 2px;
-  margin: 0;
-  padding: 20px 18px 10px 18px;
+  padding: 15px 20px;
   text-transform: uppercase;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+li:hover {
+  color: #00f0ff;
+  text-shadow: 0 0 8px #00f0ff;
 }
 
 .active {
-  color: #88CCF1;
+  color: #00f0ff;
+  border-bottom: 2px solid #00f0ff;
+  text-shadow: 0 0 10px #00f0ff;
 }
 
-/* Table */
-
+/* Table / Data Display */
 table {
-  height: 40%;
-  left: 10%;
-  margin: 20px auto;
-  overflow-y: scroll;
-  position: static;
+  margin: 40px auto;
   width: 80%;
+  border-collapse: collapse;
+  background: #161b22;
+  border: 1px solid #30363d;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  overflow: hidden; /* Ensures rounded corners work */
 }
 
 thead th {
-  background: #FF1493;
-  color: black;
-  font-family: 'Lato', sans-serif;
-  font-weight: 100;
-  letter-spacing: 2px;
+  background: #21262d;
+  color: #00f0ff; /* Electric cyan text */
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
   text-transform: uppercase;
+  border-bottom: 2px solid #30363d;
 }
 
 tr {
-  background: #f4f7f8;
-  border-bottom: 1px solid #FFF;
-  margin-bottom: 5px;
+  background: #161b22;
+  border-bottom: 1px solid #21262d;
+  transition: background 0.2s ease;
+}
+
+tr:hover {
+  background: #1f242c; /* Visual indicator when hovering over rows */
 }
 
 th, td {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  padding: 20px;
+  padding: 16px 20px;
   text-align: left;
-  width: 33.3333%;
-  font-size: 18px;
+  font-size: 16px;
 }
 
+/* Search Bar */
 .search {
-  background-color: #FFF;
-  border: 1px solid #DDD;
-  border-radius: 3px;
-  color: #AAA;
-  padding: 20px;
-  margin: 50px auto 0px auto;
-  width: 77%;
+  box-sizing: border-box;
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  color: #f0f6fc;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 16px;
+  padding: 14px 20px;
+  margin: 40px auto 0px auto;
+  width: 80%;
+  display: block; /* Centers the input element */
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.search:focus {
+  border-color: #00f0ff;
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
+}
+
+.search::placeholder {
+  color: #484f58;
 }
